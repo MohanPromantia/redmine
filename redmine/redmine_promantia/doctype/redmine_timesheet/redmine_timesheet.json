@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-09 00:13:30.610303",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "project_name",
+  "from_date",
+  "api_access_key_optional",
+  "limit",
+  "column_break_d5wf",
+  "redmine_url",
+  "to_date",
+  "additional_filters"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Project Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "redmine_url",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Redmine URL",
+   "reqd": 1
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "From Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "api_access_key_optional",
+   "fieldtype": "Data",
+   "label": "API Access Key (optional)"
+  },
+  {
+   "fieldname": "limit",
+   "fieldtype": "Data",
+   "label": "Limit"
+  },
+  {
+   "fieldname": "additional_filters",
+   "fieldtype": "Data",
+   "label": "Additional Filters"
+  },
+  {
+   "fieldname": "column_break_d5wf",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-09 00:23:40.896562",
+ "modified_by": "Administrator",
+ "module": "Redmine Promantia",
+ "name": "Redmine Timesheet",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

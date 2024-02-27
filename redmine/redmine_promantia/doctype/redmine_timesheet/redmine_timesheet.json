@@ -9,10 +9,14 @@
   "from_date",
   "api_access_key_optional",
   "limit",
+  "file_name",
   "column_break_d5wf",
   "redmine_url",
   "to_date",
-  "additional_filters"
+  "additional_filters",
+  "table_lable",
+  "table_name",
+  "source"
  ],
  "fields": [
   {
@@ -60,11 +64,31 @@
   {
    "fieldname": "column_break_d5wf",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "table_lable",
+   "fieldtype": "Data",
+   "label": "Table lable"
+  },
+  {
+   "fieldname": "table_name",
+   "fieldtype": "Data",
+   "label": "Table name"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Data",
+   "label": "source"
+  },
+  {
+   "fieldname": "file_name",
+   "fieldtype": "Data",
+   "label": "File name"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-09 00:23:40.896562",
+ "modified": "2024-01-17 16:14:09.060703",
  "modified_by": "Administrator",
  "module": "Redmine Promantia",
  "name": "Redmine Timesheet",

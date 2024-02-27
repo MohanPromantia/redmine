@@ -133,23 +133,23 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
+scheduler_events = {
 # 	"all": [
 # 		"redmine.tasks.all"
 # 	],
 # 	"daily": [
 # 		"redmine.tasks.daily"
 # 	],
-# 	"hourly": [
-# 		"redmine.tasks.hourly"
-# 	],
+	"hourly": [
+		"redmine/redmine_promantia/doctype/redmine_timesheet/redmine_timesheet.triggering_scheduler"
+	],
 # 	"weekly": [
 # 		"redmine.tasks.weekly"
 # 	],
 # 	"monthly": [
 # 		"redmine.tasks.monthly"
-# 	],
-# }
+	# ],
+}
 
 # Testing
 # -------

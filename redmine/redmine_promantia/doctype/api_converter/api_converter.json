@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-17 14:42:41.376175",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "api_key",
+  "url",
+  "file_name",
+  "file_path",
+  "table_lable",
+  "table_name",
+  "source",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "api_key",
+   "fieldtype": "Data",
+   "label": "Api key"
+  },
+  {
+   "fieldname": "url",
+   "fieldtype": "Data",
+   "label": "url"
+  },
+  {
+   "fieldname": "file_name",
+   "fieldtype": "Data",
+   "label": "File name"
+  },
+  {
+   "fieldname": "table_name",
+   "fieldtype": "Data",
+   "label": "Table name"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Api converter",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "table_lable",
+   "fieldtype": "Data",
+   "label": "Table lable"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Data",
+   "label": "Source"
+  },
+  {
+   "fieldname": "file_path",
+   "fieldtype": "Data",
+   "label": "File path"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-01-17 17:00:52.333019",
+ "modified_by": "Administrator",
+ "module": "Redmine Promantia",
+ "name": "Api converter",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

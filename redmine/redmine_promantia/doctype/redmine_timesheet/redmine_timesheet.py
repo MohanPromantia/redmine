@@ -227,65 +227,6 @@ class RedmineTimesheet(Document):
 	
 
 	
-	                 
-# 	def update_insights_monthly(self):
-# 		redmine_data = self.fetch_redmine_data()
-# 		self.append_to_csv(redmine_data)
-	
-# 	def fetch_redmine_data(self):
-# 		# Calculate the start and end dates for the current month
-# 		today = datetime.now().date()
-# 		start_date = today.replace(day=1)
-# 		end_date = (today.replace(day=1) + timedelta(days=32)).replace(day=1) - timedelta(days=1)
-
-# 		# Format dates in the required Redmine API format
-# 		start_date_str = start_date.strftime('%Y-%m-%d')
-# 		end_date_str = end_date.strftime('%Y-%m-%d')
-
-# 		# Update the parameters for the Redmine API request
-# 		self.params = {
-# 			"start_date": "><",
-# 			"v[start_date][]": [start_date_str, end_date_str],
-# 			"limit": self.limit,
-# 			"offset": self.offset,
-# 			"sort": "id:desc",
-# 			"c[]": ["project", "tracker", "parent.subject", "subject", "assigned_to", "status", "estimated_hours", "start_date", "due_date", "spent_hours", "done_ratio"],
-# 			"f[]": ["start_date"],
-# 			"op[start_date]": "><",
-# 			"t[]": ["estimated_hours", "spent_hours"]
-# 		}
-
-# 		# Make the Redmine API request
-# 		response = self.make_redmine_api_request()
-
-# 		if self.params and 'issues' in response.keys():
-# 			response = response['issues']
-# 		elif self.params and 'time_entries' in response:
-# 			response = response['time_entries']
-
-# 		return response
-
-# 	def append_to_csv(self, redmine_data):
-# 		# Check if there is existing CSV data
-# 		if not self.final_csv_data:
-# 			frappe.msgprint("No existing CSV data to append to.")
-# 			return
-
-		
-# 		new_data_df = pd.DataFrame(redmine_data)
-# 		new_data_df["estimated_hours"] = new_data_df["estimated_hours"].fillna(0).astype(int)
-# 		new_data_df.drop(columns=["is_private", "closed_on", "fixed_version", "parent"], inplace=True)
-# 		new_data_df['description'] = new_data_df['description'].replace('[^a-zA-Z0-9 ]', '', regex=True)
-
-# 		# Combine the existing CSV data with the new data
-# 		existing_csv_df = pd.read_csv(io.StringIO(self.final_csv_data))
-# 		combined_df = pd.concat([existing_csv_df, new_data_df], ignore_index=True)
-
-# 		# Save the combined DataFrame back to CSV format
-# 		csv_buffer = io.StringIO()
-# 		combined_df.to_csv(csv_buffer, index=False)
-# 		self.final_csv_data = csv_buffer.getvalue()
-# 		csv_buffer.close()
 
 
 # # @frappe.whitelist()
